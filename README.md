@@ -1,4 +1,4 @@
-# Supabase Bento Integration
+# Bento Supabase Integration
 
 An example user creation flow with email verification using Supabase Edge Functions and Bento email service.
 
@@ -65,7 +65,7 @@ Create two Edge Functions in your Supabase project:
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
-// [Copy the first index.ts content here]
+// [Copy the signup-user/index.ts content here]
 ```
 
 #### Function 2: `verify-user`
@@ -75,7 +75,7 @@ import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
-// [Copy the second index.ts content here]
+// [Copy the verify-user/index.ts content here]
 ```
 
 Deploy both functions:
