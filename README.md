@@ -117,10 +117,12 @@ const result = await response.json();
 
 ### User Verification
 
-Verify a user after they click the confirmation link 
-<note> Its best to use post events from your app not get links in your email body
+Verify a user after they click the confirmation link:
+
+[!TIP]
+It's best to use post events from your app not get links in your email body
 this is because email applications and providors can visit get links as part of spam checks
-and might confirm a user</note>
+and might confirm a user
 
 ```javascript
 const response = await fetch('https://your-project.supabase.co/functions/v1/verify-user', {
