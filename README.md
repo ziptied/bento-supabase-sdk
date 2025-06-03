@@ -119,8 +119,8 @@ const result = await response.json();
 
 Verify a user after they click the confirmation link:
 
-[!TIP]
-It's best to use post events from your app not get links in your email body
+>[!TIP]
+>It's best to use post events from your app not get links in your email body
 this is because email applications and providors can visit get links as part of spam checks
 and might confirm a user
 
